@@ -1,5 +1,5 @@
 /* =====================================================
-   TAPOBAN NURSING HOME
+   X HOSPITAL
    PREMIUM HEALTHCARE DESIGN
 ===================================================== */
 
@@ -4197,7 +4197,7 @@ footer {
     transform: translateY(-3px);
 }
 /* =========================================================
-   PREMIUM TAPOBAN FOOTER
+   PREMIUM HOSPITAL FOOTER
 ========================================================= */
 
 footer {
@@ -4624,4 +4624,132 @@ footer .logo-sub {
         padding-right: 20px;
     }
 
+}
+
+/* =========================================================
+   FINAL RESPONSIVE HERO
+   ========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.premium-hero {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Tablet and mobile */
+@media screen and (max-width: 1100px) {
+
+    .premium-hero {
+        min-height: auto !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        padding: 40px 24px 70px !important;
+        text-align: center !important;
+    }
+
+    .premium-hero .hero-photo-wrap {
+        order: 1 !important;
+        width: min(72vw, 380px) !important;
+        height: min(72vw, 380px) !important;
+        aspect-ratio: 1 / 1 !important;
+        flex: 0 0 auto !important;
+        margin: 0 auto 38px !important;
+    }
+
+    .premium-hero .hero-content {
+        order: 2 !important;
+        width: 100% !important;
+        max-width: 680px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        text-align: center !important;
+    }
+
+    .premium-hero .hero-eyebrow {
+        justify-content: center !important;
+    }
+
+    .premium-hero .hero-content h1 {
+        max-width: 680px !important;
+        margin: 0 auto !important;
+    }
+
+    .premium-hero .hero-text {
+        max-width: 560px !important;
+        margin: 25px auto 0 !important;
+    }
+
+    .premium-hero .hero-buttons {
+        justify-content: center !important;
+    }
+
+    .premium-hero .hero-highlights {
+        justify-content: center !important;
+    }
+
+    .premium-hero .hero-medical-panel,
+    .premium-hero .hero-scroll-indicator {
+        display: none !important;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 600px) {
+
+    .premium-hero {
+        padding: 24px 16px 55px !important;
+    }
+
+    .premium-hero .hero-photo-wrap {
+        width: min(82vw, 330px) !important;
+        height: min(82vw, 330px) !important;
+        margin-bottom: 30px !important;
+    }
+
+    .premium-hero .hero-content h1 {
+        font-size: clamp(42px, 13vw, 58px) !important;
+        line-height: .98 !important;
+    }
+
+    .premium-hero .hero-text {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+
+    .premium-hero .hero-buttons {
+        width: 100% !important;
+        max-width: 360px !important;
+        margin: 25px auto 0 !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    .premium-hero .hero-primary-btn,
+    .premium-hero .hero-secondary-btn {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        justify-content: center !important;
+    }
+
+    .premium-hero .hero-highlights {
+        width: 100% !important;
+        max-width: 360px !important;
+        margin: 24px auto 0 !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    .premium-hero .hero-highlight {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
 }
